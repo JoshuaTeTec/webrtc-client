@@ -35,7 +35,7 @@ function connectWebSocket() {
         alert("Mot de passe requis pour se connecter.");
         return;
     }
-    const wsUrl = `wss://webrtc-serveur-xyz.onrender.com/?token=${userPassword}`;
+    const wsUrl = `wss://https://webrtc-serveur.onrender.com/?token=${userPassword}`;
     ws = new WebSocket(wsUrl);
 
     ws.onmessage = async (event) => {
